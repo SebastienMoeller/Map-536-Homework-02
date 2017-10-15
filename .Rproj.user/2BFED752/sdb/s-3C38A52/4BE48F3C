@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "devtools::use_data_raw()\n",
+    "created" : 1508071099599.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1844558854",
+    "id" : "4BE48F3C",
+    "lastKnownWriteTime" : 1508071124,
+    "last_content_update" : 1508071124815,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/data-raw/devtools_history.R",
+    "project_path" : "data-raw/devtools_history.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
