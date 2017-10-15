@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Saving dataframe as csv in specified directory\n#'\n#' @param file_name name of the saved file\n#' @param df dataframe\n#'\n#' @import assertthat\n#'\n#' @return NULL\n#' @export\n#'\n#' @examples\n#' save_as_csv(iris, \"iris_data\")\n\nsave_as_csv <- function(df, file_name){\n  assert_that(is.dir(dirname(file_name)))\n  assert_that(is.writeable(dirname(file_name)))\n  assert_that(is.data.frame(df))\n\n  if(!grepl(\"*\\\\.csv$\",file_name)) file_name <- paste(file_name,\".csv\",sep=\"\")\n  write.csv(df, file=file_name, row.names = F)\n  return()\n}\n",
+    "created" : 1508075238333.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2988590070",
+    "id" : "32FFCFBA",
+    "lastKnownWriteTime" : 1508075300,
+    "last_content_update" : 1508075300653,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/R/save_as_csv.R",
+    "project_path" : "R/save_as_csv.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
