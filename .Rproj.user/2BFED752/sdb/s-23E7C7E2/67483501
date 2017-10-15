@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Plotting multiple French name frquencies since 1900\n#'\n#' @param name_vector vector of names to be drawn\n#'\n#' @import prenoms\n#' @import dplyr\n#' @import ggplot2\n#' @import ggthemes\n#' @import assertthat\n#'\n#' @return ggplot of names\n#' @export\n#'\n#' @examples\n#' draw_names(c(\"Diane\",\"Vincent\"))\n\ndraw_names <- function(name_vector){\n  assert_that(is.character(name_vector))\n\n  the_plot <- prenoms::prenoms %>%\n    filter(name %in% name_vector) %>%\n    group_by(year, name) %>%\n    summarize(n = sum(n)) %>%\n    ggplot(aes(x = year, y = n, color = name)) +\n    geom_line() +\n    theme_gdocs()\n\n  return(the_plot)\n}\n",
+    "created" : 1508072765344.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3462855219",
+    "id" : "67483501",
+    "lastKnownWriteTime" : 1508072911,
+    "last_content_update" : 1508072911159,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/R/draw_names.R",
+    "project_path" : "R/draw_names.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
