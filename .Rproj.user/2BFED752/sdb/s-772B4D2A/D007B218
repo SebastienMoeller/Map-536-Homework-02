@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Homework 02\"\nauthor: \"Sebastien Moeller\"\ndate: \"15/10/2017\"\noutput: html_document\n---\n\n# Set-up\n## Dependencies\n```{r}\nif (!require(\"pacman\")) install.packages(\"pacman\")\n\npacman::p_load()\n```\n\n## Setting the Working Directory\n```{r}\ngetwd()\n\nsetwd(\"/Users/Sebastien/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R : Python/Homework 02\")\n```\n\n## Functions\n```{r}\nsave_as_csv <- function(){\n  \n}\n\nmy_csv_reader <- function(){\n  \n}\n\nmulti_excel <- function(){\n  \n}\n\ndraw_names <- function(){\n  \n}\n\ndraw_a_name <- function(){\n  \n}\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "created" : 1508071726494.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2127691186",
+    "id" : "D007B218",
+    "lastKnownWriteTime" : 1508069003,
+    "last_content_update" : 1508069003,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Homework 02 MOELLER.Rmd",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

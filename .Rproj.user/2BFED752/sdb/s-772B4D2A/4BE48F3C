@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "devtools::use_data_raw()\n",
+    "contents" : "devtools::use_data_raw()\ndevtools::use_package(\"dplyr\")\ndevtools::use_package(\"ggplot2\")\ndevtools::use_package(\"prenoms\")\ndevtools::use_package(\"ggthemes\")\ndevtools::use_package(\"assertthat\")\n",
     "created" : 1508071099599.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1844558854",
+    "hash" : "192739879",
     "id" : "4BE48F3C",
-    "lastKnownWriteTime" : 1508071124,
-    "last_content_update" : 1508071124815,
+    "lastKnownWriteTime" : 1508071926,
+    "last_content_update" : 1508071926875,
     "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/data-raw/devtools_history.R",
     "project_path" : "data-raw/devtools_history.R",
     "properties" : {

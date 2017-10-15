@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Plotting French name frquency since 1900\n#'\n#' @param the_name\n#' @param the_sex\n#'\n#' @return\n#' @import dplyr\n#' @import ggplot2\n#' @import prenoms\n#' @import ggthemes\n#' @import assertthat\n#' @export\n#'\n#' @examples\ndraw_a_name <- function(the_name, the_sex){\n  assert_that(the_sex %in% c(\"M\", \"F\"))\n  assert_that(is.string(the_name))\n\n  tmp <- prenoms::prenoms %>%\n    filter(sex==the_sex, name==the_name) %>%\n    group_by(year,sex,name) %>%\n    summarize(n=sum(n)) %>%\n    ggplot(aes(x=year,y=n)) +\n    geom_line() +\n    labs(title=the_name) +\n    theme_gdocs()\n  return(tmp)\n}\n",
+    "created" : 1508071684240.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3086123421",
+    "id" : "2FA54FC8",
+    "lastKnownWriteTime" : 1508072080,
+    "last_content_update" : 1508072080995,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/R/draw_a_name.R",
+    "project_path" : "R/draw_a_name.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
