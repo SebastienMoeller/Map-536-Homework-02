@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Read an excel file with multiple sheet into multiple lists\n#'\n#' @param file_name full path including file name\n#'\n#' @import readxl\n#' @import assertthat\n#'\n#' @return list of dataframes of excel sheets of a single xlsx file\n#' @export\n#'\n#' @examples\n#' \\dontrun{\n#'  multi_excel(\"..\")\n#' }\n\nmulti_excel <- function(file_name){\n  assert_that(is.dir(dirname(file_name)))\n  assert_that(is.readable(file_name))\n  assert_that(has_extension(file_name,\"xlsx\"))\n\n  sheets <- lapply(excel_sheets(file_name), read_excel, path = file_name)\n  return(sheets)\n}\n",
+    "created" : 1508073136567.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3637240642",
+    "id" : "186EFCB4",
+    "lastKnownWriteTime" : 1508073338,
+    "last_content_update" : 1508073338081,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/R/multi_excel.R",
+    "project_path" : "R/multi_excel.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

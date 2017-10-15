@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Read csv files in a directory into a list\n#'\n#' @param dir_path directoy where the csv files are read\n#'\n#' @import assertthat\n#'\n#' @return a list of dataframes made up of csv\n#' @export\n#'\n#' @examples\n#' \\dontrun{\n#' my_csv_reader(\"..\")\n#' }\n\nmy_csv_reader <- function(dir_path = getwd()){\n  assert_that(is.dir(dirname(dir_path)))\n  assert_that(is.readable(dirname(dir_path)))\n\n  csvs <- list.files(path = dir_path, pattern = \"*\\\\.csv$\",full.names = TRUE)\n  csv_list <- lapply(csvs, read.csv)\n  return(csv_list)\n}\n",
+    "created" : 1508073970643.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1671373749",
+    "id" : "28256952",
+    "lastKnownWriteTime" : 1508074029,
+    "last_content_update" : 1508074029349,
+    "path" : "~/Documents/Documents/University/Polytechnique & HEC/Year 1/03 MAP536 R Python/Homework 02/Home2/R/my_csv_reader.R",
+    "project_path" : "R/my_csv_reader.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
